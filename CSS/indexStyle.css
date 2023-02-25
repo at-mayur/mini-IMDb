@@ -1,0 +1,38 @@
+body{
+    background-color: grey;
+}
+
+#app-icon{
+    background-color: rgb(255, 221, 0);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    border-radius: 8px;
+}
+
+.horizontal-list{
+    overflow: scroll;
+}
+
+.horizontal-list::-webkit-scrollbar{
+    display: none;
+}
+
+.card-width{
+    width: 25%;
+}
+
+.txt-overflow{
+    white-space: nowrap;
+    overflow: hidden;
+    line-break: normal;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 780px) {
+    .card-width{
+        width: 35%;
+    }
+}
+

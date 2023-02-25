@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | IMDB</title>
+
+    <script src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/indexStyle.css">
+    
+</head>
+<body>
+
+    <!-- Created a navbar using bootstrap -->
+    <!-- class navbar for navbar styles.
+    navbar-expand-sm for navbar expand for screen sizes above small
+    bg-dark, data-bs-theme="dark" for dark navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
+
+        <div class="container-fluid">
+            <!-- Brand image. here created a dummy logo using div element -->
+            <a href="#" class="navbar-brand"><div id="app-icon">IMDb</div></a>
+
+            <!-- navbar toggler button appears for smaller screen sizes -->
+            <button type="button" class="navbar-toggler mt-2" data-bs-toggle="collapse" data-bs-target="#mySearchBar">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+    
+            <!-- Content of navbar which will be accessible by click of toggler button on smaller screen sizes -->
+            <div class="collapse navbar-collapse" id="mySearchBar">
+                <!-- Ul holding nav elements -->
+                <ul class="navbar-nav ms-3 w-50">
+    
+                    <!-- Individual nav item -->
+                    <li class="nav-item w-100">
+                        <input type="search" class="form-control" placeholder="Search" id="search-movie">
+                    </li>
+        
+                </ul>
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item ms-3 me-2">
+                        <!-- Navbar link -->
+                        <a class="nav-link" href="">
+                            <span class="me-1"><i class="fa-solid fa-heart"></i></span>
+                            Favourites
+                        </a>
+                    </li>
+        
+                    <li class="nav-item ms-3">
+                        <a href="" class="nav-link">Sign In</a>
+                    </li>
+
+                </ul>
+            </div>
+    
+
+        </div>
+
+    </nav>
+
+
+    <div id="highlights-for-the-day" class="carousel slide" style="height: 90vh;">
+
+        <div class="carousel-inner h-100">
+
+            <div class="carousel-item active h-100">
+
+                <img src="https://cinereveal.com/wp-content/uploads/2023/02/selfiee-2023-movie-45454321465-860x523.jpeg" class="d-block w-100 h-100" alt="">
+                <div class="carousel-caption d-block">
+                    <a class="d-flex align-items-center text-white" href="">
+                        <div class="me-5">
+                            <h1><i class="fa-regular fa-circle-play"></i></h1>
+                        </div>
+                        <div>
+                            <h1 class="text-start">Selfie</h1>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="carousel-item h-100">
+
+                <img src="https://knowinmarathi.com/wp-content/uploads/2023/01/Download-Valvi-Movie.webp" class="d-block w-100 h-100" alt="">
+                <div class="carousel-caption d-block">
+                    <a class="d-flex align-items-center text-white" href="">
+                        <div class="me-5">
+                            <h1><i class="fa-regular fa-circle-play"></i></h1>
+                        </div>
+                        <div>
+                            <h1 class="text-start">Vaalvi</h1>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="carousel-item h-100">
+
+                <img src="https://www.koimoi.com/wp-content/new-galleries/2022/12/pathan-cast-fee-revealed-deepika-padukone-shah-rukh-khan-john-abraham-takes-home-massive-paycheck-001.jpg" class="d-block w-100 h-100" alt="">
+                <div class="carousel-caption d-block">
+                    <a class="d-flex align-items-center text-white" href="">
+                        <div class="me-5">
+                            <h1><i class="fa-regular fa-circle-play"></i></h1>
+                        </div>
+                        <div>
+                            <h1 class="text-start">Pathaan</h1>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button type="button" class="carousel-control-prev" data-bs-target="#highlights-for-the-day" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button type="button" class="carousel-control-next" data-bs-target="#highlights-for-the-day" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#highlights-for-the-day" data-bs-slide-to="0" class="active" ></button>
+            <button type="button" data-bs-target="#highlights-for-the-day" data-bs-slide-to="1" ></button>
+            <button type="button" data-bs-target="#highlights-for-the-day" data-bs-slide-to="2" ></button>
+        </div>
+
+    </div>
+
+    <div class="container mx-auto mt-5">
+        <h1 class="text-warning mb-4">
+            <span class="d-inline-block rounded"><i class="fa-solid fa-video"></i></span>
+            Trailers >
+        </h1>
+        <div class="d-flex horizontal-list w-100">
+            <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNmUyOWZhYzAtMDJjZC00MGEyLWIwMzItYTRmYjRmMjUyYTI4XkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_SX300.jpg" alt="Vaalvi">
+                <div class="card-body">
+                    <h5 class="card-title">Vaalvi</h5>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <a class="text-white" href="#">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="ms-2">Play</span>
+                        
+                    </a>
+                    <a class="text-white" href="#">
+                        <i class="fa-solid fa-info"></i>
+                        <span class="ms-2">info</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNDE2ZGUyZDgtYjUxMi00YWNhLTgxZDUtZjExYjRkOGU0MjU1XkEyXkFqcGdeQXVyMTEzNzg0Mjkx._V1_SX300.jpg" alt="Thunivu">
+                <div class="card-body">
+                    <h5 class="card-title">Thunivu</h5>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <a class="text-white" href="#">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="ms-2">Play</span>
+                        
+                    </a>
+                    <a class="text-white" href="#">
+                        <i class="fa-solid fa-info"></i>
+                        <span class="ms-2">info</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BZGIwNWFhOGYtNjFmMi00ZWJjLWE0ZTEtODg3OWE1Y2M0NzVmXkEyXkFqcGdeQXVyMTMxODA4Njgx._V1_SX300.jpg" alt="Varisu">
+                <div class="card-body">
+                    <h5 class="card-title">Varisu</h5>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <a class="text-white" href="#">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="ms-2">Play</span>
+                        
+                    </a>
+                    <a class="text-white" href="#">
+                        <i class="fa-solid fa-info"></i>
+                        <span class="ms-2">info</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNzViMzYyNzYtZDQ5ZS00YzkwLWI4ZWUtYzljZWEyNTdjYmQ2XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg" alt="Cirkus">
+                <div class="card-body">
+                    <h5 class="card-title">Cirkus</h5>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <a class="text-white" href="#">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="ms-2">Play</span>
+                        
+                    </a>
+                    <a class="text-white" href="#">
+                        <i class="fa-solid fa-info"></i>
+                        <span class="ms-2">info</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNGJhNGJlYmItZjBiMS00MDE2LWFkNDYtNDNiOTgxOGZhMTA5XkEyXkFqcGdeQXVyNTM2NTg3Nzg@._V1_SX300.jpg" alt="Sarsenapati Hambirrao">
+                <div class="card-body">
+                    <h5 class="card-title">Sarsenapati Hambirrao</h5>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <a class="text-white" href="#">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="ms-2">Play</span>
+                        
+                    </a>
+                    <a class="text-white" href="#">
+                        <i class="fa-solid fa-info"></i>
+                        <span class="ms-2">info</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNDE2ZGUyZDgtYjUxMi00YWNhLTgxZDUtZjExYjRkOGU0MjU1XkEyXkFqcGdeQXVyMTEzNzg0Mjkx._V1_SX300.jpg" alt="Thunivu">
+                <div class="card-body">
+                    <h5 class="card-title">Thunivu</h5>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <a class="text-white" href="#">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="ms-2">Play</span>
+                        
+                    </a>
+                    <a class="text-white" href="#">
+                        <i class="fa-solid fa-info"></i>
+                        <span class="ms-2">info</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BZGIwNWFhOGYtNjFmMi00ZWJjLWE0ZTEtODg3OWE1Y2M0NzVmXkEyXkFqcGdeQXVyMTMxODA4Njgx._V1_SX300.jpg" alt="Varisu">
+                <div class="card-body">
+                    <h5 class="card-title">Varisu</h5>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <a class="text-white" href="#">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="ms-2">Play</span>
+                        
+                    </a>
+                    <a class="text-white" href="#">
+                        <i class="fa-solid fa-info"></i>
+                        <span class="ms-2">info</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="container mt-5">
+        <h1 class="text-white">
+            <span class="bg-warning d-inline-block rounded" style="width: 5px; height: 30px;"></span>
+            Fans Pick >
+        </h1>
+        <h4 class="text-light mb-4">This week's Top Picks for You...</h4>
+
+        <div class="d-flex horizontal-list w-100">
+
+            <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNmUyOWZhYzAtMDJjZC00MGEyLWIwMzItYTRmYjRmMjUyYTI4XkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_SX300.jpg" alt="Vaalvi">
+                <div class="card-body">
+                    <h5 class="card-title">Vaalvi</h5>
+                    <div class="card-text d-flex justify-content-between">
+                        <p>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            8.9
+                        </p>
+                        <a class="text-white" href="#" style="text-decoration: none;">
+                            <i class="fa-regular fa-star"></i>
+                            <span class="ms-2">Rate</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-around">
+                    <a class="text-white" href="#">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="ms-2">Trailer</span>
+                        
+                    </a>
+                </div>
+            </div>
+
+            <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNDE2ZGUyZDgtYjUxMi00YWNhLTgxZDUtZjExYjRkOGU0MjU1XkEyXkFqcGdeQXVyMTEzNzg0Mjkx._V1_SX300.jpg" alt="Thunivu">
+                <div class="card-body">
+                    <h5 class="card-title">Thunivu</h5>
+                    <div class="card-text d-flex justify-content-between">
+                        <p>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            8.9
+                        </p>
+                        <a class="text-white" href="#" style="text-decoration: none;">
+                            <i class="fa-regular fa-star"></i>
+                            <span class="ms-2">Rate</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-around">
+                    <a class="text-white" href="#">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="ms-2">Trailer</span>
+                        
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNGJhNGJlYmItZjBiMS00MDE2LWFkNDYtNDNiOTgxOGZhMTA5XkEyXkFqcGdeQXVyNTM2NTg3Nzg@._V1_SX300.jpg" alt="Sarsenapati Hambirrao">
+                <div class="card-body">
+                    <h5 class="card-title">Sarsenapati Hambirrao</h5>
+                    <div class="card-text d-flex justify-content-between">
+                        <p>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            8.9
+                        </p>
+                        <a class="text-white" href="#" style="text-decoration: none;">
+                            <i class="fa-regular fa-star"></i>
+                            <span class="ms-2">Rate</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-around">
+                    <a class="text-white" href="#">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="ms-2">Trailer</span>
+                        
+                    </a>
+                </div>
+            </div>
+
+            <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BZGIwNWFhOGYtNjFmMi00ZWJjLWE0ZTEtODg3OWE1Y2M0NzVmXkEyXkFqcGdeQXVyMTMxODA4Njgx._V1_SX300.jpg" alt="Varisu">
+                <div class="card-body">
+                    <h5 class="card-title">Varisu</h5>
+                    <div class="card-text d-flex justify-content-between">
+                        <p>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            8.9
+                        </p>
+                        <a class="text-white" href="#" style="text-decoration: none;">
+                            <i class="fa-regular fa-star"></i>
+                            <span class="ms-2">Rate</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-around">
+                    <a class="text-white" href="#">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="ms-2">Trailer</span>
+                        
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNmUyOWZhYzAtMDJjZC00MGEyLWIwMzItYTRmYjRmMjUyYTI4XkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_SX300.jpg" alt="Vaalvi">
+                <div class="card-body">
+                    <h5 class="card-title">Vaalvi</h5>
+                    <div class="card-text d-flex justify-content-between">
+                        <p>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            8.9
+                        </p>
+                        <a class="text-white" href="#" style="text-decoration: none;">
+                            <i class="fa-regular fa-star"></i>
+                            <span class="ms-2">Rate</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-around">
+                    <a class="text-white" href="#">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="ms-2">Trailer</span>
+                        
+                    </a>
+                </div>
+            </div>
+
+            <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNGJhNGJlYmItZjBiMS00MDE2LWFkNDYtNDNiOTgxOGZhMTA5XkEyXkFqcGdeQXVyNTM2NTg3Nzg@._V1_SX300.jpg" alt="Sarsenapati Hambirrao">
+                <div class="card-body">
+                    <h5 class="card-title">Sarsenapati Hambirrao</h5>
+                    <div class="card-text d-flex justify-content-between">
+                        <p>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            8.9
+                        </p>
+                        <a class="text-white" href="#" style="text-decoration: none;">
+                            <i class="fa-regular fa-star"></i>
+                            <span class="ms-2">Rate</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-around">
+                    <a class="text-white" href="#">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="ms-2">Trailer</span>
+                        
+                    </a>
+                </div>
+            </div>
+
+            <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BZGIwNWFhOGYtNjFmMi00ZWJjLWE0ZTEtODg3OWE1Y2M0NzVmXkEyXkFqcGdeQXVyMTMxODA4Njgx._V1_SX300.jpg" alt="Varisu">
+                <div class="card-body">
+                    <h5 class="card-title">Varisu</h5>
+                    <div class="card-text d-flex justify-content-between">
+                        <p>
+                            <span><i class="fa-solid fa-star"></i></span>
+                            8.9
+                        </p>
+                        <a class="text-white" href="#" style="text-decoration: none;">
+                            <i class="fa-regular fa-star"></i>
+                            <span class="ms-2">Rate</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-around">
+                    <a class="text-white" href="#">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="ms-2">Trailer</span>
+                        
+                    </a>
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container mt-5 mb-5">
+        <h1 class="text-warning">Explore Movies & TV Shows</h1>
+        <br><br>
+
+        <div>
+            <h2 class="text-white">
+                <span class="bg-warning d-inline-block rounded" style="width: 5px; height: 30px;"></span>
+                In Theatres >
+            </h2>
+            <h5 class="text-light mb-4">Showtimes Near You...</h5>
+
+            <div class="d-flex horizontal-list w-100">
+
+                <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                    <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BYTRjN2MzM2MtM2UzYi00YjA5LThkZDQtMThjZjFhNzIwMGM3XkEyXkFqcGdeQXVyOTI3MzI4MzA@._V1_SX300.jpg" alt="Selfiee">
+                    <div class="card-body">
+                        <h5 class="card-title">Selfiee</h5>
+                        <div class="card-text d-flex justify-content-between">
+                            <p>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                8.9
+                            </p>
+                            <a class="text-white" href="#" style="text-decoration: none;">
+                                <i class="fa-regular fa-star"></i>
+                                <span class="ms-2">Rate</span>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-primary d-block mx-auto">
+                            <i class="fa-solid fa-clapperboard"></i>
+                            Showtimes
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-around">
+                        <a class="text-white" href="#">
+                            <i class="fa-solid fa-play"></i>
+                            <span class="ms-2">Trailer</span>
+                            
+                        </a>
+                        
+                    </div>
+                </div>
+
+                <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                    <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNWJjM2ZjZTMtZTZmMy00YzViLTkxNGQtNzVjODcwNWMxYzExXkEyXkFqcGdeQXVyMTE0MTY2Mzk2._V1_SX300.jpg" alt="Shehzada">
+                    <div class="card-body">
+                        <h5 class="card-title">Shehzada</h5>
+                        <div class="card-text d-flex justify-content-between">
+                            <p>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                8.9
+                            </p>
+                            <a class="text-white" href="#" style="text-decoration: none;">
+                                <i class="fa-regular fa-star"></i>
+                                <span class="ms-2">Rate</span>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-primary d-block mx-auto">
+                            <i class="fa-solid fa-clapperboard"></i>
+                            Showtimes
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-around">
+                        <a class="text-white" href="#">
+                            <i class="fa-solid fa-play"></i>
+                            <span class="ms-2">Trailer</span>
+                            
+                        </a>
+                        
+                    </div>
+                </div>
+
+                <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                    <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BYjhiNjBlODctY2ZiOC00YjVlLWFlNzAtNTVhNzM1YjI1NzMxXkEyXkFqcGdeQXVyMjQxNTE1MDA@._V1_SX300.jpg" alt="Avatar: The Way of Water">
+                    <div class="card-body">
+                        <h5 class="card-title">Avatar: The Way of Water</h5>
+                        <div class="card-text d-flex justify-content-between">
+                            <p>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                8.9
+                            </p>
+                            <a class="text-white" href="#" style="text-decoration: none;">
+                                <i class="fa-regular fa-star"></i>
+                                <span class="ms-2">Rate</span>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-primary d-block mx-auto">
+                            <i class="fa-solid fa-clapperboard"></i>
+                            Showtimes
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-around">
+                        <a class="text-white" href="#">
+                            <i class="fa-solid fa-play"></i>
+                            <span class="ms-2">Trailer</span>
+                            
+                        </a>
+                        
+                    </div>
+                </div>
+
+                <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                    <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BMDIzM2FlNTctNjAzZi00YzhkLThjYWQtMDY5Njc0NjdmMGVlXkEyXkFqcGdeQXVyMTUzOTcyODA5._V1_SX300.jpg" alt="Ant-Man and the Wasp: Quantumania">
+                    <div class="card-body">
+                        <h5 class="card-title">Ant-Man and the Wasp: Quantumania</h5>
+                        <div class="card-text d-flex justify-content-between">
+                            <p>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                8.9
+                            </p>
+                            <a class="text-white" href="#" style="text-decoration: none;">
+                                <i class="fa-regular fa-star"></i>
+                                <span class="ms-2">Rate</span>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-primary d-block mx-auto">
+                            <i class="fa-solid fa-clapperboard"></i>
+                            Showtimes
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-around">
+                        <a class="text-white" href="#">
+                            <i class="fa-solid fa-play"></i>
+                            <span class="ms-2">Trailer</span>
+                            
+                        </a>
+                        
+                    </div>
+                </div>
+
+                <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                    <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BM2QzM2JiNTMtYjU4Ny00MDZkLTk3MmUtYTRjMzVkZGJlNmYyXkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_SX300.jpg" alt="Pathaan">
+                    <div class="card-body">
+                        <h5 class="card-title">Pathaan</h5>
+                        <div class="card-text d-flex justify-content-between">
+                            <p>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                8.9
+                            </p>
+                            <a class="text-white" href="#" style="text-decoration: none;">
+                                <i class="fa-regular fa-star"></i>
+                                <span class="ms-2">Rate</span>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-primary d-block mx-auto">
+                            <i class="fa-solid fa-clapperboard"></i>
+                            Showtimes
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-around">
+                        <a class="text-white" href="#">
+                            <i class="fa-solid fa-play"></i>
+                            <span class="ms-2">Trailer</span>
+                            
+                        </a>
+                        
+                    </div>
+                </div>
+
+                <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                    <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNmUyOWZhYzAtMDJjZC00MGEyLWIwMzItYTRmYjRmMjUyYTI4XkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_SX300.jpg" alt="Vaalvi">
+                    <div class="card-body">
+                        <h5 class="card-title">Vaalvi</h5>
+                        <div class="card-text d-flex justify-content-between">
+                            <p>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                8.9
+                            </p>
+                            <a class="text-white" href="#" style="text-decoration: none;">
+                                <i class="fa-regular fa-star"></i>
+                                <span class="ms-2">Rate</span>
+                            </a>
+                        </div>
+                        <a href="#" class="btn btn-primary d-block mx-auto">
+                            <i class="fa-solid fa-clapperboard"></i>
+                            Showtimes
+                        </a>
+                    </div>
+                    <div class="card-footer d-flex justify-content-around">
+                        <a class="text-white" href="#">
+                            <i class="fa-solid fa-play"></i>
+                            <span class="ms-2">Trailer</span>
+                            
+                        </a>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container mt-5 vh-100 horizontal-list">
+        <h1 class="text-white">
+            <span class="bg-warning d-inline-block rounded" style="width: 5px; height: 30px;"></span>
+            Coming Soon >
+        </h1>
+        <h4 class="text-light mb-4">Latest Releasing Near You...</h4>
+
+        <div class="card mb-3 text-bg-dark w-75 h-25">
+
+            <div class="row g-0 h-100">
+
+                <div class="col-4 h-100">
+                    <img class="img-fluid rounded-start h-100 w-100" src="https://m.media-amazon.com/images/M/MV5BYjk1YmFkOGYtMWVjNS00NjkyLWE3MGYtM2ZhOGYwNDZlNGYzXkEyXkFqcGdeQXVyNjkwOTg4MTA@._V1_SX300.jpg" alt="Jaggu Ani Juliet">
+                </div>
+
+                <div class="col-8 h-100">
+                    <div class="card-body h-100">
+                        <h5 class="card-title">Jaggu Ani Juliet</h5>
+                        <p class="card-text h-50">
+                            Jaggu and Juliet is a contemporary, fun filled laugh riot that revolves around 
+                            people, love, travel, fun and discovering a soul mate.
+                        </p>
+                        <p class="card-text">
+                            Releasing: 
+                            <span>10 Feb 2023</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card mb-3 text-bg-dark w-75 h-25">
+
+            <div class="row g-0 h-100">
+
+                <div class="col-4 h-100">
+                    <img class="img-fluid rounded-start h-100 w-100" src="https://m.media-amazon.com/images/M/MV5BNmZmYWFiYzAtY2RhMC00MDRiLWI1M2YtNzRkZGNmYTIwZDI4XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg" alt="Tu Jhoothi Main Makkaar">
+                </div>
+
+                <div class="col-8 h-100">
+                    <div class="card-body h-100">
+                        <h5 class="card-title">Tu Jhoothi Main Makkaar</h5>
+                        <p class="card-text h-50">
+                            Madness ensues when a 'player' in the world of romantic relationships finds 
+                            a girl who's a worthy opponent, that believes love is a battle of wits.
+                        </p>
+                        <p class="card-text">
+                            Releasing: 
+                            <span>08 Mar 2023</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card mb-3 text-bg-dark w-75 h-25">
+
+            <div class="row g-0 h-100">
+
+                <div class="col-4 h-100">
+                    <img class="img-fluid rounded-start h-100 w-100" src="https://m.media-amazon.com/images/M/MV5BNDJiNThlNGUtNDRiZS00NmRmLWI4Y2EtZWExYjk4N2Q4MGFkXkEyXkFqcGdeQXVyMTU0ODI1NTA2._V1_SX300.jpg" alt="Kisi Ka Bhai Kisi Ki Jaan">
+                </div>
+
+                <div class="col-8 h-100">
+                    <div class="card-body h-100">
+                        <h5 class="card-title">Kisi Ka Bhai Kisi Ki Jaan</h5>
+                        <p class="card-text h-50">
+                            Three brothers-where the two younger siblings must wait to marry until their elder brother becomes attached.
+                        </p>
+                        <p class="card-text">
+                            Releasing: 
+                            <span>21 Apr 2023</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card mb-3 text-bg-dark w-75 h-25">
+
+            <div class="row g-0 h-100">
+
+                <div class="col-4 h-100">
+                    <img class="img-fluid rounded-start h-100 w-100" src="https://m.media-amazon.com/images/M/MV5BMjQ3MzhlNzQtZGEyOC00OWI2LWI5NDAtNTlmMTUwMGI3ODM3XkEyXkFqcGdeQXVyNTgxODY5ODI@._V1_SX300.jpg" alt="Salaar">
+                </div>
+
+                <div class="col-8 h-100">
+                    <div class="card-body h-100">
+                        <h5 class="card-title">Salaar</h5>
+                        <p class="card-text h-50">
+                            A gang leader tries to keep a promise made to his dying friend and takes on the other criminal gangs.
+                        </p>
+                        <p class="card-text">
+                            Releasing: 
+                            <span>14 Apr 2022</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card mb-3 text-bg-dark w-75 h-25">
+
+            <div class="row g-0 h-100">
+
+                <div class="col-4 h-100">
+                    <img class="img-fluid rounded-start h-100 w-100" src="https://m.media-amazon.com/images/M/MV5BM2QyYTRkMjMtMDk5NC00OTc0LWIyYTYtNGNhMzRjMTNhNGNkXkEyXkFqcGdeQXVyNjc0NzQzNTM@._V1_SX300.jpg" alt="Aquaman and the Lost Kingdom">
+                </div>
+
+                <div class="col-8 h-100">
+                    <div class="card-body h-100">
+                        <h5 class="card-title">Aquaman and the Lost Kingdom</h5>
+                        <p class="card-text h-50">
+                            Plot unknown. Sequel to the 2018 film 'Aquaman.
+                        </p>
+                        <p class="card-text">
+                            Releasing: 
+                            <span>25 Dec 2023</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
