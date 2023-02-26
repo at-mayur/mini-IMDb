@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourites | IMDB</title>
+
+    <script src="https://kit.fontawesome.com/b3348ae33f.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/movieStyle.css">
+</head>
+<body>
+
+
+    <!-- Created a navbar using bootstrap -->
+    <!-- class navbar for navbar styles.
+    navbar-expand-sm for navbar expand for screen sizes above small
+    bg-dark, data-bs-theme="dark" for dark navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark" data-bs-theme="dark">
+
+        <div class="container-fluid">
+            <!-- Brand image. here created a dummy logo using div element -->
+            <a href="./index.html" class="navbar-brand"><div id="app-icon">IMDb</div></a>
+
+            <!-- navbar toggler button appears for smaller screen sizes -->
+            <button type="button" class="navbar-toggler mt-2" data-bs-toggle="collapse" data-bs-target="#mySearchBar">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+    
+            <!-- Content of navbar which will be accessible by click of toggler button on smaller screen sizes -->
+            <div class="collapse navbar-collapse" id="mySearchBar">
+                <!-- Ul holding nav elements -->
+                <ul class="navbar-nav ms-3 w-50">
+    
+                    <!-- Individual nav item -->
+                    <li class="nav-item w-100">
+                        <input type="search" class="form-control" placeholder="Search" id="search-movie">
+                    </li>
+        
+                </ul>
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item ms-3 me-2">
+                        <!-- Navbar link -->
+                        <a class="nav-link" href="#">
+                            <span class="me-1"><i class="fa-solid fa-heart"></i></span>
+                            Favourites
+                        </a>
+                    </li>
+        
+                    <li class="nav-item ms-3">
+                        <a href="#" class="nav-link">Sign In</a>
+                    </li>
+
+                </ul>
+            </div>
+    
+
+        </div>
+
+    </nav>
+
+    <div class="container mt-5">
+
+        <h1 class="text-white">
+            <span class="bg-warning d-inline-block rounded" style="width: 5px; height: 30px;"></span>
+            Your Favourites >
+        </h1>
+        <h4 class="text-light mb-4">Movies & Shows marked as Fav by You...</h4>
+
+        <div class="row">
+
+            <div class="col-6 col-md-4 mb-3">
+
+                <div class="card text-bg-dark">
+                    <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNmUyOWZhYzAtMDJjZC00MGEyLWIwMzItYTRmYjRmMjUyYTI4XkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_SX300.jpg" alt="Vaalvi">
+                    <div class="card-body">
+                        <h5 class="card-title">Vaalvi</h5>
+                        <div class="card-text d-flex justify-content-between">
+                            <p>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                8.9
+                            </p>
+                            <a class="text-white" href="#" style="text-decoration: none;">
+                                <i class="fa-regular fa-star"></i>
+                                <span class="ms-2">Rate</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-around">
+                        <a class="text-white" href="#">
+                            <i class="fa-solid fa-play"></i>
+                            <span class="ms-2">Trailer</span>
+                            
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-6 col-md-4 mb-3">
+
+                <div class="card text-bg-dark">
+                    <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNmUyOWZhYzAtMDJjZC00MGEyLWIwMzItYTRmYjRmMjUyYTI4XkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_SX300.jpg" alt="Vaalvi">
+                    <div class="card-body">
+                        <h5 class="card-title">Vaalvi</h5>
+                        <div class="card-text d-flex justify-content-between">
+                            <p>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                8.9
+                            </p>
+                            <a class="text-white" href="#" style="text-decoration: none;">
+                                <i class="fa-regular fa-star"></i>
+                                <span class="ms-2">Rate</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-around">
+                        <a class="text-white" href="#">
+                            <i class="fa-solid fa-play"></i>
+                            <span class="ms-2">Trailer</span>
+                            
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-6 col-md-4 mb-3">
+
+                <div class="card text-bg-dark">
+                    <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNmUyOWZhYzAtMDJjZC00MGEyLWIwMzItYTRmYjRmMjUyYTI4XkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_SX300.jpg" alt="Vaalvi">
+                    <div class="card-body">
+                        <h5 class="card-title">Vaalvi</h5>
+                        <div class="card-text d-flex justify-content-between">
+                            <p>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                8.9
+                            </p>
+                            <a class="text-white" href="#" style="text-decoration: none;">
+                                <i class="fa-regular fa-star"></i>
+                                <span class="ms-2">Rate</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-around">
+                        <a class="text-white" href="#">
+                            <i class="fa-solid fa-play"></i>
+                            <span class="ms-2">Trailer</span>
+                            
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-6 col-md-4 mb-3">
+
+                <div class="card text-bg-dark">
+                    <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNmUyOWZhYzAtMDJjZC00MGEyLWIwMzItYTRmYjRmMjUyYTI4XkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_SX300.jpg" alt="Vaalvi">
+                    <div class="card-body">
+                        <h5 class="card-title">Vaalvi</h5>
+                        <div class="card-text d-flex justify-content-between">
+                            <p>
+                                <span class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                8.9
+                            </p>
+                            <a class="text-white" href="#" style="text-decoration: none;">
+                                <i class="fa-regular fa-star"></i>
+                                <span class="ms-2">Rate</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-around">
+                        <a class="text-white" href="#">
+                            <i class="fa-solid fa-play"></i>
+                            <span class="ms-2">Trailer</span>
+                            
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <footer class="d-flex flex-column align-items-center mt-5">
+        <div class="container mb-4 text-center">
+            <button type="button" class="btn btn-warning"> Sign In For More access</button>
+        </div>
+
+        <div class="mb-4">
+            <a href="#" class="text-light fs-3 mx-4"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="text-light fs-3 mx-4"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="text-light fs-3 mx-4"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="text-light fs-3 mx-4"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="text-light fs-3 mx-4"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+
+        <div class="mb-3">
+            <p class="text-light">
+                <span><i class="fa-regular fa-copyright"></i></span>
+                1990 - 2023 by xyz.com
+            </p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

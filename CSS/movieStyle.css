@@ -11,6 +11,10 @@ body{
     border-radius: 8px;
 }
 
+.txt-hover:hover{
+    text-decoration: underline !important;
+}
+
 .horizontal-list{
     overflow: scroll;
 }
@@ -28,4 +32,3 @@ body{
         width: 35%;
     }
 }
-
