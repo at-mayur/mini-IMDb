@@ -30,11 +30,31 @@
             <!-- Content of navbar which will be accessible by click of toggler button on smaller screen sizes -->
             <div class="collapse navbar-collapse" id="mySearchBar">
                 <!-- Ul holding nav elements -->
-                <ul class="navbar-nav ms-3 w-50">
+                <ul class="navbar-nav ms-3 w-50 search-bar-item">
     
                     <!-- Individual nav item -->
-                    <li class="nav-item w-100">
+                    <li class="nav-item w-100 search-bar">
                         <input type="search" class="form-control" placeholder="Search" id="search-movie">
+                        <div  id="search-movie-results" class="search-results w-100 rounded p-1">
+
+                            <!-- <div class="search-results-item rounded p-2">
+                                <a href="movie.html?<movieId>" target="_blank" class="search-prediction-details text-decoration-none">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-1">
+                                            <img class="movie-poster" src="https://m.media-amazon.com/images/M/MV5BNDE2ZGUyZDgtYjUxMi00YWNhLTgxZDUtZjExYjRkOGU0MjU1XkEyXkFqcGdeQXVyMTEzNzg0Mjkx._V1_SX300.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Movie Name</p>
+                                            <p class="mb-1">Year</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a id="add-fav-<movieId>" href="#" class="search-prediction-heart text-center fav-heart text-decoration-none">
+                                    <i class="fa-regular fa-heart"></i>
+                                </a>
+                            </div> -->
+
+                        </div>
                     </li>
         
                 </ul>
@@ -42,7 +62,7 @@
 
                     <li class="nav-item ms-3 me-2">
                         <!-- Navbar link -->
-                        <a class="nav-link" href="./favourite.html">
+                        <a class="nav-link" href="./favourite.html" target="_blank">
                             <span class="me-1"><i class="fa-solid fa-heart"></i></span>
                             Favourites
                         </a>
@@ -67,18 +87,18 @@
 
             <div class="row g-0 h-100">
 
-                <div class="col-5 col-md-4 h-100">
-                    <img class="img-fluid rounded-start w-100 h-100" src="https://m.media-amazon.com/images/M/MV5BNDE2ZGUyZDgtYjUxMi00YWNhLTgxZDUtZjExYjRkOGU0MjU1XkEyXkFqcGdeQXVyMTEzNzg0Mjkx._V1_SX300.jpg" alt="Thunivu">
+                <div id="movie-img" class="col-5 col-md-4 h-100">
+                    
                 </div>
 
                 <div class="col-7 col-md-8 h-100">
                     <div class="card-body h-100">
-                        <h1 class="card-title">Thunivu</h1>
+                        <h1 id="movie-title" class="card-title">Title</h1>
 
                         <p class="card-text">
-                            <span>2023</span>
+                            <span id="movie-year">Year</span>
                             <span class="fs-2">.</span>
-                            <span>146m</span>
+                            <span id="movie-durr">Duration</span>
                         </p>
 
                         <div class="card-text d-flex justify-content-between align-items-center">
@@ -86,21 +106,20 @@
                             <div class="ms-2">
                                 <p class="mb-1">
                                     <span  class="text-warning"><i class="fa-solid fa-star"></i></span>
-                                    6.5
+                                    <span id="movie-rating">0</span>
                                 </p>
-                                <p class="text-info">
-                                    24,192 Votes
+                                <p id="movie-votes" class="text-info">
+                                    0 Votes
                                 </p>
                             </div>
                             
-                            <a class="text-white me-4" href="#" style="text-decoration: none;">
+                            <a class="text-white me-4 txt-shadow" href="#" style="text-decoration: none;">
                                 <i class="fa-regular fa-star"></i>
                                 <span class="ms-2">Rate</span>
                             </a>
                         </div>
-                        <p class="card-text mt-3 mb-4">
-                            A mysterious mastermind - Daredevil and his team forms a plan and 
-                            commits bank heist to find the corporate looted people's money.
+                        <p id="movie-plot" class="card-text mt-3 mb-4">
+                            Plot
                         </p>
 
                         <div class="container d-flex justify-content-between mb-4">
@@ -116,13 +135,11 @@
 
                         <p class="card-text">
                             Release: 
-                            <span>25 Dec 2023</span>
+                            <span id="movie-release">---</span>
                         </p>
 
-                        <div class="mt-2">
-                            <a href="#" class="text-white text-decoration-none p-1 border rounded-pill mx-1">Action</a>
-                            <a href="#" class="text-white text-decoration-none p-1 border rounded-pill mx-1">Adventure</a>
-                            <a href="#" class="text-white text-decoration-none p-1 border rounded-pill mx-1">Thriller</a>
+                        <div id="movie-genre" class="mt-2">
+                            ---
                         </div>
                     </div>
 
@@ -141,68 +158,24 @@
             Details
         </h2>
 
-        <div>
-            <div class="me-2 mb-2 fs-6 fw-bold">Director </div>
-            <span>
-                <a href="#" class="text-decoration-none text-primary txt-hover">
-                    H. Vinoth
-                </a>
-            </span>
+        <div id="movie-director">
+            
         </div>
 
         <hr>
-        <div>
-            <div class="me-2 mb-2 fs-6 fw-bold">Writer </div>
-            <span>
-                <a href="#" class="text-decoration-none text-primary txt-hover">
-                    H. Vinoth
-                </a>
-            </span>
+        <div id="movie-writer">
+            
         </div>
 
         <hr>
-        <div>
-            <div class="me-2 mb-2 fs-6 fw-bold">Actors </div>
-            <span>
-                <a href="#" class="text-decoration-none text-primary txt-hover">
-                    Ajith Kumar
-                </a>
-            </span>
-            <span class="mx-2 fs-6 fw-bold">.</span>
-            <span>
-                <a href="#" class="text-decoration-none text-primary txt-hover">
-                    Manju Warrier
-                </a>
-            </span>
-            <span class="mx-2 fs-6 fw-bold">.</span>
-            <span>
-                <a href="#" class="text-decoration-none text-primary txt-hover">
-                    Samuthirakani
-                </a>
-            </span>
+        <div id="movie-actors">
+            
 
         </div>
 
         <hr>
-        <div>
-            <div class="me-2 mb-2 fs-6 fw-bold">Language </div>
-            <span>
-                <a href="#" class="text-decoration-none text-primary txt-hover">
-                    Tamil
-                </a>
-            </span>
-            <span class="mx-2 fs-6 fw-bold">.</span>
-            <span>
-                <a href="#" class="text-decoration-none text-primary txt-hover">
-                    Hindi
-                </a>
-            </span>
-            <span class="mx-2 fs-6 fw-bold">.</span>
-            <span>
-                <a href="#" class="text-decoration-none text-primary txt-hover">
-                    English
-                </a>
-            </span>
+        <div id="movie-languages">
+            
         </div> 
 
     </div>
@@ -225,14 +198,14 @@
                             <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                             8.9
                         </p>
-                        <a class="text-white" href="#" style="text-decoration: none;">
+                        <a class="text-white txt-shadow" href="#" style="text-decoration: none;">
                             <i class="fa-regular fa-star"></i>
                             <span class="ms-2">Rate</span>
                         </a>
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-around">
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
                         <span class="ms-2">Trailer</span>
                         
@@ -249,14 +222,14 @@
                             <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                             8.9
                         </p>
-                        <a class="text-white" href="#" style="text-decoration: none;">
+                        <a class="text-white txt-shadow" href="#" style="text-decoration: none;">
                             <i class="fa-regular fa-star"></i>
                             <span class="ms-2">Rate</span>
                         </a>
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-around">
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
                         <span class="ms-2">Trailer</span>
                         
@@ -274,14 +247,14 @@
                             <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                             8.9
                         </p>
-                        <a class="text-white" href="#" style="text-decoration: none;">
+                        <a class="text-white txt-shadow" href="#" style="text-decoration: none;">
                             <i class="fa-regular fa-star"></i>
                             <span class="ms-2">Rate</span>
                         </a>
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-around">
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
                         <span class="ms-2">Trailer</span>
                         
@@ -298,14 +271,14 @@
                             <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                             8.9
                         </p>
-                        <a class="text-white" href="#" style="text-decoration: none;">
+                        <a class="text-white txt-shadow" href="#" style="text-decoration: none;">
                             <i class="fa-regular fa-star"></i>
                             <span class="ms-2">Rate</span>
                         </a>
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-around">
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
                         <span class="ms-2">Trailer</span>
                         
@@ -323,14 +296,14 @@
                             <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                             8.9
                         </p>
-                        <a class="text-white" href="#" style="text-decoration: none;">
+                        <a class="text-white txt-shadow" href="#" style="text-decoration: none;">
                             <i class="fa-regular fa-star"></i>
                             <span class="ms-2">Rate</span>
                         </a>
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-around">
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
                         <span class="ms-2">Trailer</span>
                         
@@ -347,14 +320,14 @@
                             <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                             8.9
                         </p>
-                        <a class="text-white" href="#" style="text-decoration: none;">
+                        <a class="text-white txt-shadow" href="#" style="text-decoration: none;">
                             <i class="fa-regular fa-star"></i>
                             <span class="ms-2">Rate</span>
                         </a>
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-around">
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
                         <span class="ms-2">Trailer</span>
                         
@@ -371,14 +344,14 @@
                             <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                             8.9
                         </p>
-                        <a class="text-white" href="#" style="text-decoration: none;">
+                        <a class="text-white txt-shadow" href="#" style="text-decoration: none;">
                             <i class="fa-regular fa-star"></i>
                             <span class="ms-2">Rate</span>
                         </a>
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-around">
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
                         <span class="ms-2">Trailer</span>
                         
@@ -418,7 +391,7 @@
 
 
 
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./Script/movieScript.js"></script>
 </body>
 </html>

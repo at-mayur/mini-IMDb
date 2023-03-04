@@ -31,11 +31,31 @@
             <!-- Content of navbar which will be accessible by click of toggler button on smaller screen sizes -->
             <div class="collapse navbar-collapse" id="mySearchBar">
                 <!-- Ul holding nav elements -->
-                <ul class="navbar-nav ms-3 w-50">
+                <ul class="navbar-nav ms-3 w-50 search-bar-item">
     
                     <!-- Individual nav item -->
-                    <li class="nav-item w-100">
+                    <li class="nav-item w-100 search-bar">
                         <input type="search" class="form-control" placeholder="Search" id="search-movie">
+                        <div  id="search-movie-results" class="search-results w-100 rounded p-1">
+
+                            <!-- <div class="search-results-item rounded p-2">
+                                <a href="movie.html?<movieId>" target="_blank" class="search-prediction-details text-decoration-none">
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-1">
+                                            <img class="movie-poster" src="https://m.media-amazon.com/images/M/MV5BNDE2ZGUyZDgtYjUxMi00YWNhLTgxZDUtZjExYjRkOGU0MjU1XkEyXkFqcGdeQXVyMTEzNzg0Mjkx._V1_SX300.jpg" alt="">
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Movie Name</p>
+                                            <p class="mb-1">Year</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a id="add-fav-<movieId>" href="#" class="search-prediction-heart text-center fav-heart text-decoration-none">
+                                    <i class="fa-regular fa-heart"></i>
+                                </a>
+                            </div> -->
+
+                        </div>
                     </li>
         
                 </ul>
@@ -43,14 +63,14 @@
 
                     <li class="nav-item ms-3 me-2">
                         <!-- Navbar link -->
-                        <a class="nav-link" href="./favourite.html">
+                        <a class="nav-link" href="./favourite.html" target="_blank">
                             <span class="me-1"><i class="fa-solid fa-heart"></i></span>
                             Favourites
                         </a>
                     </li>
         
                     <li class="nav-item ms-3">
-                        <a href="" class="nav-link">Sign In</a>
+                        <a href="#" class="nav-link">Sign In</a>
                     </li>
 
                 </ul>
@@ -146,12 +166,12 @@
                     <h5 class="card-title">Vaalvi</h5>
                 </div>
                 <div class="card-footer d-flex justify-content-between">
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
                         <span class="ms-2">Play</span>
                         
                     </a>
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-info"></i>
                         <span class="ms-2">info</span>
                     </a>
@@ -164,12 +184,12 @@
                     <h5 class="card-title">Thunivu</h5>
                 </div>
                 <div class="card-footer d-flex justify-content-between">
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
                         <span class="ms-2">Play</span>
                         
                     </a>
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-info"></i>
                         <span class="ms-2">info</span>
                     </a>
@@ -182,12 +202,12 @@
                     <h5 class="card-title">Varisu</h5>
                 </div>
                 <div class="card-footer d-flex justify-content-between">
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
                         <span class="ms-2">Play</span>
                         
                     </a>
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-info"></i>
                         <span class="ms-2">info</span>
                     </a>
@@ -200,12 +220,12 @@
                     <h5 class="card-title">Cirkus</h5>
                 </div>
                 <div class="card-footer d-flex justify-content-between">
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
                         <span class="ms-2">Play</span>
                         
                     </a>
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-info"></i>
                         <span class="ms-2">info</span>
                     </a>
@@ -218,12 +238,12 @@
                     <h5 class="card-title">Sarsenapati Hambirrao</h5>
                 </div>
                 <div class="card-footer d-flex justify-content-between">
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
                         <span class="ms-2">Play</span>
                         
                     </a>
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-info"></i>
                         <span class="ms-2">info</span>
                     </a>
@@ -236,12 +256,12 @@
                     <h5 class="card-title">Thunivu</h5>
                 </div>
                 <div class="card-footer d-flex justify-content-between">
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
                         <span class="ms-2">Play</span>
                         
                     </a>
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-info"></i>
                         <span class="ms-2">info</span>
                     </a>
@@ -254,12 +274,12 @@
                     <h5 class="card-title">Varisu</h5>
                 </div>
                 <div class="card-footer d-flex justify-content-between">
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
                         <span class="ms-2">Play</span>
                         
                     </a>
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-info"></i>
                         <span class="ms-2">info</span>
                     </a>
@@ -290,14 +310,14 @@
                             <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                             8.9
                         </p>
-                        <a class="text-white" href="#" style="text-decoration: none;">
+                        <a class="text-white txt-shadow" href="#" style="text-decoration: none;">
                             <i class="fa-regular fa-star"></i>
                             <span class="ms-2">Rate</span>
                         </a>
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-around">
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
                         <span class="ms-2">Trailer</span>
                         
@@ -314,14 +334,14 @@
                             <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                             8.9
                         </p>
-                        <a class="text-white" href="#" style="text-decoration: none;">
+                        <a class="text-white txt-shadow" href="#" style="text-decoration: none;">
                             <i class="fa-regular fa-star"></i>
                             <span class="ms-2">Rate</span>
                         </a>
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-around">
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
                         <span class="ms-2">Trailer</span>
                         
@@ -339,14 +359,14 @@
                             <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                             8.9
                         </p>
-                        <a class="text-white" href="#" style="text-decoration: none;">
+                        <a class="text-white txt-shadow" href="#" style="text-decoration: none;">
                             <i class="fa-regular fa-star"></i>
                             <span class="ms-2">Rate</span>
                         </a>
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-around">
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
                         <span class="ms-2">Trailer</span>
                         
@@ -363,14 +383,14 @@
                             <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                             8.9
                         </p>
-                        <a class="text-white" href="#" style="text-decoration: none;">
+                        <a class="text-white txt-shadow" href="#" style="text-decoration: none;">
                             <i class="fa-regular fa-star"></i>
                             <span class="ms-2">Rate</span>
                         </a>
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-around">
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
                         <span class="ms-2">Trailer</span>
                         
@@ -388,14 +408,14 @@
                             <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                             8.9
                         </p>
-                        <a class="text-white" href="#" style="text-decoration: none;">
+                        <a class="text-white txt-shadow" href="#" style="text-decoration: none;">
                             <i class="fa-regular fa-star"></i>
                             <span class="ms-2">Rate</span>
                         </a>
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-around">
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
                         <span class="ms-2">Trailer</span>
                         
@@ -412,14 +432,14 @@
                             <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                             8.9
                         </p>
-                        <a class="text-white" href="#" style="text-decoration: none;">
+                        <a class="text-white txt-shadow" href="#" style="text-decoration: none;">
                             <i class="fa-regular fa-star"></i>
                             <span class="ms-2">Rate</span>
                         </a>
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-around">
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
                         <span class="ms-2">Trailer</span>
                         
@@ -436,14 +456,14 @@
                             <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                             8.9
                         </p>
-                        <a class="text-white" href="#" style="text-decoration: none;">
+                        <a class="text-white txt-shadow" href="#" style="text-decoration: none;">
                             <i class="fa-regular fa-star"></i>
                             <span class="ms-2">Rate</span>
                         </a>
                     </div>
                 </div>
                 <div class="card-footer d-flex justify-content-around">
-                    <a class="text-white" href="#">
+                    <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
                         <span class="ms-2">Trailer</span>
                         
@@ -478,7 +498,7 @@
                                 <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                                 8.9
                             </p>
-                            <a class="text-white" href="#" style="text-decoration: none;">
+                            <a class="text-white txt-shadow" href="#" style="text-decoration: none;">
                                 <i class="fa-regular fa-star"></i>
                                 <span class="ms-2">Rate</span>
                             </a>
@@ -489,7 +509,7 @@
                         </a>
                     </div>
                     <div class="card-footer d-flex justify-content-around">
-                        <a class="text-white" href="#">
+                        <a class="text-white txt-shadow" href="#">
                             <i class="fa-solid fa-play"></i>
                             <span class="ms-2">Trailer</span>
                             
@@ -507,7 +527,7 @@
                                 <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                                 8.9
                             </p>
-                            <a class="text-white" href="#" style="text-decoration: none;">
+                            <a class="text-white txt-shadow" href="#" style="text-decoration: none;">
                                 <i class="fa-regular fa-star"></i>
                                 <span class="ms-2">Rate</span>
                             </a>
@@ -518,7 +538,7 @@
                         </a>
                     </div>
                     <div class="card-footer d-flex justify-content-around">
-                        <a class="text-white" href="#">
+                        <a class="text-white txt-shadow" href="#">
                             <i class="fa-solid fa-play"></i>
                             <span class="ms-2">Trailer</span>
                             
@@ -536,7 +556,7 @@
                                 <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                                 8.9
                             </p>
-                            <a class="text-white" href="#" style="text-decoration: none;">
+                            <a class="text-white txt-shadow" href="#" style="text-decoration: none;">
                                 <i class="fa-regular fa-star"></i>
                                 <span class="ms-2">Rate</span>
                             </a>
@@ -547,7 +567,7 @@
                         </a>
                     </div>
                     <div class="card-footer d-flex justify-content-around">
-                        <a class="text-white" href="#">
+                        <a class="text-white txt-shadow" href="#">
                             <i class="fa-solid fa-play"></i>
                             <span class="ms-2">Trailer</span>
                             
@@ -565,7 +585,7 @@
                                 <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                                 8.9
                             </p>
-                            <a class="text-white" href="#" style="text-decoration: none;">
+                            <a class="text-white txt-shadow" href="#" style="text-decoration: none;">
                                 <i class="fa-regular fa-star"></i>
                                 <span class="ms-2">Rate</span>
                             </a>
@@ -576,7 +596,7 @@
                         </a>
                     </div>
                     <div class="card-footer d-flex justify-content-around">
-                        <a class="text-white" href="#">
+                        <a class="text-white txt-shadow" href="#">
                             <i class="fa-solid fa-play"></i>
                             <span class="ms-2">Trailer</span>
                             
@@ -594,7 +614,7 @@
                                 <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                                 8.9
                             </p>
-                            <a class="text-white" href="#" style="text-decoration: none;">
+                            <a class="text-white txt-shadow" href="#" style="text-decoration: none;">
                                 <i class="fa-regular fa-star"></i>
                                 <span class="ms-2">Rate</span>
                             </a>
@@ -605,7 +625,7 @@
                         </a>
                     </div>
                     <div class="card-footer d-flex justify-content-around">
-                        <a class="text-white" href="#">
+                        <a class="text-white txt-shadow" href="#">
                             <i class="fa-solid fa-play"></i>
                             <span class="ms-2">Trailer</span>
                             
@@ -623,7 +643,7 @@
                                 <span class="text-warning"><i class="fa-solid fa-star"></i></span>
                                 8.9
                             </p>
-                            <a class="text-white" href="#" style="text-decoration: none;">
+                            <a class="text-white txt-shadow" href="#" style="text-decoration: none;">
                                 <i class="fa-regular fa-star"></i>
                                 <span class="ms-2">Rate</span>
                             </a>
@@ -634,7 +654,7 @@
                         </a>
                     </div>
                     <div class="card-footer d-flex justify-content-around">
-                        <a class="text-white" href="#">
+                        <a class="text-white txt-shadow" href="#">
                             <i class="fa-solid fa-play"></i>
                             <span class="ms-2">Trailer</span>
                             
@@ -657,7 +677,7 @@
         </h1>
         <h4 class="text-light mb-4">Latest Releasing Near You...</h4>
 
-        <div class="card mb-3 text-bg-dark w-75 h-25">
+        <div class="card mb-3 text-bg-dark w-75 h-25 recent-relese">
 
             <div class="row g-0 h-100">
 
@@ -665,10 +685,10 @@
                     <img class="img-fluid rounded-start h-100 w-100" src="https://m.media-amazon.com/images/M/MV5BYjk1YmFkOGYtMWVjNS00NjkyLWE3MGYtM2ZhOGYwNDZlNGYzXkEyXkFqcGdeQXVyNjkwOTg4MTA@._V1_SX300.jpg" alt="Jaggu Ani Juliet">
                 </div>
 
-                <div class="col-8 h-100">
+                <div class="col-8 h-100 txt-overflow">
                     <div class="card-body h-100">
                         <h5 class="card-title">Jaggu Ani Juliet</h5>
-                        <p class="card-text h-50">
+                        <p class="card-text h-50 txt-overflow">
                             Jaggu and Juliet is a contemporary, fun filled laugh riot that revolves around 
                             people, love, travel, fun and discovering a soul mate.
                         </p>
@@ -683,7 +703,7 @@
 
         </div>
 
-        <div class="card mb-3 text-bg-dark w-75 h-25">
+        <div class="card mb-3 text-bg-dark w-75 h-25 recent-relese">
 
             <div class="row g-0 h-100">
 
@@ -691,10 +711,10 @@
                     <img class="img-fluid rounded-start h-100 w-100" src="https://m.media-amazon.com/images/M/MV5BNmZmYWFiYzAtY2RhMC00MDRiLWI1M2YtNzRkZGNmYTIwZDI4XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg" alt="Tu Jhoothi Main Makkaar">
                 </div>
 
-                <div class="col-8 h-100">
+                <div class="col-8 h-100 txt-overflow">
                     <div class="card-body h-100">
                         <h5 class="card-title">Tu Jhoothi Main Makkaar</h5>
-                        <p class="card-text h-50">
+                        <p class="card-text h-50  txt-overflow">
                             Madness ensues when a 'player' in the world of romantic relationships finds 
                             a girl who's a worthy opponent, that believes love is a battle of wits.
                         </p>
@@ -709,7 +729,7 @@
 
         </div>
 
-        <div class="card mb-3 text-bg-dark w-75 h-25">
+        <div class="card mb-3 text-bg-dark w-75 h-25 recent-relese">
 
             <div class="row g-0 h-100">
 
@@ -717,10 +737,10 @@
                     <img class="img-fluid rounded-start h-100 w-100" src="https://m.media-amazon.com/images/M/MV5BNDJiNThlNGUtNDRiZS00NmRmLWI4Y2EtZWExYjk4N2Q4MGFkXkEyXkFqcGdeQXVyMTU0ODI1NTA2._V1_SX300.jpg" alt="Kisi Ka Bhai Kisi Ki Jaan">
                 </div>
 
-                <div class="col-8 h-100">
+                <div class="col-8 h-100 txt-overflow">
                     <div class="card-body h-100">
                         <h5 class="card-title">Kisi Ka Bhai Kisi Ki Jaan</h5>
-                        <p class="card-text h-50">
+                        <p class="card-text h-50  txt-overflow">
                             Three brothers-where the two younger siblings must wait to marry until their elder brother becomes attached.
                         </p>
                         <p class="card-text">
@@ -734,7 +754,7 @@
 
         </div>
 
-        <div class="card mb-3 text-bg-dark w-75 h-25">
+        <div class="card mb-3 text-bg-dark w-75 h-25 recent-relese">
 
             <div class="row g-0 h-100">
 
@@ -742,10 +762,10 @@
                     <img class="img-fluid rounded-start h-100 w-100" src="https://m.media-amazon.com/images/M/MV5BMjQ3MzhlNzQtZGEyOC00OWI2LWI5NDAtNTlmMTUwMGI3ODM3XkEyXkFqcGdeQXVyNTgxODY5ODI@._V1_SX300.jpg" alt="Salaar">
                 </div>
 
-                <div class="col-8 h-100">
+                <div class="col-8 h-100 txt-overflow">
                     <div class="card-body h-100">
                         <h5 class="card-title">Salaar</h5>
-                        <p class="card-text h-50">
+                        <p class="card-text h-50 txt-overflow">
                             A gang leader tries to keep a promise made to his dying friend and takes on the other criminal gangs.
                         </p>
                         <p class="card-text">
@@ -759,7 +779,7 @@
 
         </div>
 
-        <div class="card mb-3 text-bg-dark w-75 h-25">
+        <div class="card mb-3 text-bg-dark w-75 h-25 recent-relese">
 
             <div class="row g-0 h-100">
 
@@ -767,10 +787,10 @@
                     <img class="img-fluid rounded-start h-100 w-100" src="https://m.media-amazon.com/images/M/MV5BM2QyYTRkMjMtMDk5NC00OTc0LWIyYTYtNGNhMzRjMTNhNGNkXkEyXkFqcGdeQXVyNjc0NzQzNTM@._V1_SX300.jpg" alt="Aquaman and the Lost Kingdom">
                 </div>
 
-                <div class="col-8 h-100">
+                <div class="col-8 h-100 txt-overflow">
                     <div class="card-body h-100">
                         <h5 class="card-title">Aquaman and the Lost Kingdom</h5>
-                        <p class="card-text h-50">
+                        <p class="card-text h-50 txt-overflow">
                             Plot unknown. Sequel to the 2018 film 'Aquaman.
                         </p>
                         <p class="card-text">
@@ -816,5 +836,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./Script/indexScript.js"></script>
 </body>
 </html>
