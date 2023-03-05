@@ -2,6 +2,7 @@ body{
     background-color: grey;
 }
 
+/* Styling imdb icon */
 #app-icon{
     background-color: rgb(255, 221, 0);
     color: black;
@@ -11,11 +12,13 @@ body{
     border-radius: 8px;
 }
 
+/* adding shadow and scale effect for few a tags */
 .txt-shadow:hover {
     text-shadow: 0 0 1px whitesmoke;
     transform: scale(1.05);
 }
 
+/* adding overflow scroll and hiding scrollbar */
 .txt-overflow{
     overflow: scroll;
 }
@@ -24,15 +27,12 @@ body{
     display: none;
 }
 
-.txt-shadow:hover {
-    text-shadow: 0 0 1px whitesmoke;
-    transform: scale(1.05);
-}
-
+/* Stylings for search results */
 .search-bar{
     position: relative;
 }
 
+/* search result display div styles */
 .search-results{
     position: absolute;
     margin-top: 5px;
@@ -47,30 +47,31 @@ body{
     display: none;
 }
 
+/* width height for search movie poster */
 .movie-poster{
     width: 50px;
     height: 70px;
 }
 
+/* aligning all elements within search result */
 .search-results-item{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.search-results-item:last-of-type{
-    border: none;
-}
-
+/* hover effect for search result item */
 .search-results-item:hover{
     background-color: lightgrey;
 }
 
+/* movie dtls */
 .search-prediction-details{
     color: black;
     width: 95%;
 }
 
+/* fav btn */
 .search-prediction-heart{
     color: black;
     width: 5%;
@@ -80,14 +81,12 @@ body{
     transform: scale(1.1);
 }
 
+/* media queries to adjust some elements according to screen sizes */
 @media screen and (max-width: 780px) {
 
     .search-bar-item{
         width: 90% !important;
     }
 
-    .recent-relese{
-        width: 100% !important;
-    }
 }
 

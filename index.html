@@ -21,7 +21,7 @@
 
         <div class="container-fluid">
             <!-- Brand image. here created a dummy logo using div element -->
-            <a href="#" class="navbar-brand"><div id="app-icon">IMDb</div></a>
+            <a href="#" class="navbar-brand"><div id="app-icon">Mini IMDb</div></a>
 
             <!-- navbar toggler button appears for smaller screen sizes -->
             <button type="button" class="navbar-toggler mt-2" data-bs-toggle="collapse" data-bs-target="#mySearchBar">
@@ -36,6 +36,7 @@
                     <!-- Individual nav item -->
                     <li class="nav-item w-100 search-bar">
                         <input type="search" class="form-control" placeholder="Search" id="search-movie">
+                        <!-- div showing search results -->
                         <div  id="search-movie-results" class="search-results w-100 rounded p-1">
 
                             <!-- <div class="search-results-item rounded p-2">
@@ -62,7 +63,7 @@
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item ms-3 me-2">
-                        <!-- Navbar link -->
+                        <!-- Navbar link to favourite movies page -->
                         <a class="nav-link" href="./favourite.html" target="_blank">
                             <span class="me-1"><i class="fa-solid fa-heart"></i></span>
                             Favourites
@@ -82,13 +83,19 @@
     </nav>
 
 
+    <!-- Carousel using bootstrap -->
     <div id="highlights-for-the-day" class="carousel slide" style="height: 90vh;">
 
+        <!-- Carousel inner div holding images -->
         <div class="carousel-inner h-100">
 
+            <!-- Individual carousel item -->
             <div class="carousel-item active h-100">
 
+                <!-- image for carousel item -->
                 <img src="https://cinereveal.com/wp-content/uploads/2023/02/selfiee-2023-movie-45454321465-860x523.jpeg" class="d-block w-100 h-100" alt="">
+                
+                <!-- div for caption -->
                 <div class="carousel-caption d-block">
                     <a class="d-flex align-items-center text-white" href="">
                         <div class="me-5">
@@ -102,6 +109,7 @@
 
             </div>
 
+            <!-- 2nd carousel item -->
             <div class="carousel-item h-100">
 
                 <img src="https://knowinmarathi.com/wp-content/uploads/2023/01/Download-Valvi-Movie.webp" class="d-block w-100 h-100" alt="">
@@ -118,6 +126,7 @@
 
             </div>
 
+            <!-- 3rd carousel item -->
             <div class="carousel-item h-100">
 
                 <img src="https://www.koimoi.com/wp-content/new-galleries/2022/12/pathan-cast-fee-revealed-deepika-padukone-shah-rukh-khan-john-abraham-takes-home-massive-paycheck-001.jpg" class="d-block w-100 h-100" alt="">
@@ -136,16 +145,19 @@
 
         </div>
 
+        <!-- carousel prev slide btn -->
         <button type="button" class="carousel-control-prev" data-bs-target="#highlights-for-the-day" data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>
             <span class="visually-hidden">Previous</span>
         </button>
 
+        <!-- carousel next slide btn -->
         <button type="button" class="carousel-control-next" data-bs-target="#highlights-for-the-day" data-bs-slide="next">
             <span class="carousel-control-next-icon"></span>
             <span class="visually-hidden">Next</span>
         </button>
 
+        <!-- carousel indicators for all slides -->
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#highlights-for-the-day" data-bs-slide-to="0" class="active" ></button>
             <button type="button" data-bs-target="#highlights-for-the-day" data-bs-slide-to="1" ></button>
@@ -154,17 +166,28 @@
 
     </div>
 
+    <!-- div for Trailer -->
     <div class="container mx-auto mt-5">
+        <!-- title for section -->
         <h1 class="text-warning mb-4">
             <span class="d-inline-block rounded"><i class="fa-solid fa-video"></i></span>
             Trailers >
         </h1>
+
+        <!-- div holding content -->
         <div class="d-flex horizontal-list w-100">
+
+            <!-- list item using card -->
             <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                <!-- image for card. display poster for movie -->
                 <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNmUyOWZhYzAtMDJjZC00MGEyLWIwMzItYTRmYjRmMjUyYTI4XkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_SX300.jpg" alt="Vaalvi">
+                
+                <!-- card body -->
                 <div class="card-body">
                     <h5 class="card-title">Vaalvi</h5>
                 </div>
+
+                <!-- card footer -->
                 <div class="card-footer d-flex justify-content-between">
                     <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
@@ -178,6 +201,7 @@
                 </div>
             </div>
 
+            <!-- card item -->
             <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                 <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNDE2ZGUyZDgtYjUxMi00YWNhLTgxZDUtZjExYjRkOGU0MjU1XkEyXkFqcGdeQXVyMTEzNzg0Mjkx._V1_SX300.jpg" alt="Thunivu">
                 <div class="card-body">
@@ -196,6 +220,7 @@
                 </div>
             </div>
 
+            <!-- card item -->
             <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                 <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BZGIwNWFhOGYtNjFmMi00ZWJjLWE0ZTEtODg3OWE1Y2M0NzVmXkEyXkFqcGdeQXVyMTMxODA4Njgx._V1_SX300.jpg" alt="Varisu">
                 <div class="card-body">
@@ -214,6 +239,7 @@
                 </div>
             </div>
 
+            <!-- card item -->
             <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                 <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNzViMzYyNzYtZDQ5ZS00YzkwLWI4ZWUtYzljZWEyNTdjYmQ2XkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg" alt="Cirkus">
                 <div class="card-body">
@@ -232,6 +258,7 @@
                 </div>
             </div>
 
+            <!-- card item -->
             <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                 <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNGJhNGJlYmItZjBiMS00MDE2LWFkNDYtNDNiOTgxOGZhMTA5XkEyXkFqcGdeQXVyNTM2NTg3Nzg@._V1_SX300.jpg" alt="Sarsenapati Hambirrao">
                 <div class="card-body">
@@ -250,6 +277,7 @@
                 </div>
             </div>
 
+            <!-- card item -->
             <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                 <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNDE2ZGUyZDgtYjUxMi00YWNhLTgxZDUtZjExYjRkOGU0MjU1XkEyXkFqcGdeQXVyMTEzNzg0Mjkx._V1_SX300.jpg" alt="Thunivu">
                 <div class="card-body">
@@ -268,6 +296,7 @@
                 </div>
             </div>
 
+            <!-- card item -->
             <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                 <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BZGIwNWFhOGYtNjFmMi00ZWJjLWE0ZTEtODg3OWE1Y2M0NzVmXkEyXkFqcGdeQXVyMTMxODA4Njgx._V1_SX300.jpg" alt="Varisu">
                 <div class="card-body">
@@ -291,19 +320,26 @@
 
 
 
-
+    <!-- Another list displaying fans pick -->
     <div class="container mt-5">
+        <!-- section title -->
         <h1 class="text-white">
             <span class="bg-warning d-inline-block rounded" style="width: 5px; height: 30px;"></span>
             Fans Pick >
         </h1>
         <h4 class="text-light mb-4">This week's Top Picks for You...</h4>
 
+        <!-- div holding all items -->
         <div class="d-flex horizontal-list w-100">
 
+            <!-- fans pick card item -->
             <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
+                <!-- movie poster -->
                 <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNmUyOWZhYzAtMDJjZC00MGEyLWIwMzItYTRmYjRmMjUyYTI4XkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_SX300.jpg" alt="Vaalvi">
+                
+                <!-- card body -->
                 <div class="card-body">
+                    <!-- movie details i.e. title & rating -->
                     <h5 class="card-title">Vaalvi</h5>
                     <div class="card-text d-flex justify-content-between">
                         <p>
@@ -316,6 +352,7 @@
                         </a>
                     </div>
                 </div>
+                <!-- card footer -->
                 <div class="card-footer d-flex justify-content-around">
                     <a class="text-white txt-shadow" href="#">
                         <i class="fa-solid fa-play"></i>
@@ -325,6 +362,7 @@
                 </div>
             </div>
 
+            <!-- fans pick card item -->
             <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                 <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNDE2ZGUyZDgtYjUxMi00YWNhLTgxZDUtZjExYjRkOGU0MjU1XkEyXkFqcGdeQXVyMTEzNzg0Mjkx._V1_SX300.jpg" alt="Thunivu">
                 <div class="card-body">
@@ -350,6 +388,7 @@
                 </div>
             </div>
 
+            <!-- fans pick card item -->
             <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                 <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNGJhNGJlYmItZjBiMS00MDE2LWFkNDYtNDNiOTgxOGZhMTA5XkEyXkFqcGdeQXVyNTM2NTg3Nzg@._V1_SX300.jpg" alt="Sarsenapati Hambirrao">
                 <div class="card-body">
@@ -374,6 +413,7 @@
                 </div>
             </div>
 
+            <!-- fans pick card item -->
             <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                 <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BZGIwNWFhOGYtNjFmMi00ZWJjLWE0ZTEtODg3OWE1Y2M0NzVmXkEyXkFqcGdeQXVyMTMxODA4Njgx._V1_SX300.jpg" alt="Varisu">
                 <div class="card-body">
@@ -399,6 +439,7 @@
                 </div>
             </div>
 
+            <!-- fans pick card item -->
             <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                 <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNmUyOWZhYzAtMDJjZC00MGEyLWIwMzItYTRmYjRmMjUyYTI4XkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_SX300.jpg" alt="Vaalvi">
                 <div class="card-body">
@@ -423,6 +464,7 @@
                 </div>
             </div>
 
+            <!-- fans pick card item -->
             <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                 <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNGJhNGJlYmItZjBiMS00MDE2LWFkNDYtNDNiOTgxOGZhMTA5XkEyXkFqcGdeQXVyNTM2NTg3Nzg@._V1_SX300.jpg" alt="Sarsenapati Hambirrao">
                 <div class="card-body">
@@ -447,6 +489,7 @@
                 </div>
             </div>
 
+            <!-- fans pick card item -->
             <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                 <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BZGIwNWFhOGYtNjFmMi00ZWJjLWE0ZTEtODg3OWE1Y2M0NzVmXkEyXkFqcGdeQXVyMTMxODA4Njgx._V1_SX300.jpg" alt="Varisu">
                 <div class="card-body">
@@ -476,19 +519,25 @@
 
     </div>
 
+
+    <!-- Another section for explore -->
     <div class="container mt-5 mb-5">
         <h1 class="text-warning">Explore Movies & TV Shows</h1>
         <br><br>
 
+        <!-- individual div containing diff explore lst -->
         <div>
+            <!-- section title -->
             <h2 class="text-white">
                 <span class="bg-warning d-inline-block rounded" style="width: 5px; height: 30px;"></span>
                 In Theatres >
             </h2>
             <h5 class="text-light mb-4">Showtimes Near You...</h5>
 
+            <!-- div holding all items -->
             <div class="d-flex horizontal-list w-100">
 
+                <!-- in theatres card item -->
                 <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                     <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BYTRjN2MzM2MtM2UzYi00YjA5LThkZDQtMThjZjFhNzIwMGM3XkEyXkFqcGdeQXVyOTI3MzI4MzA@._V1_SX300.jpg" alt="Selfiee">
                     <div class="card-body">
@@ -503,6 +552,7 @@
                                 <span class="ms-2">Rate</span>
                             </a>
                         </div>
+                        <!-- Showtimes btn -->
                         <a href="#" class="btn btn-primary d-block mx-auto">
                             <i class="fa-solid fa-clapperboard"></i>
                             Showtimes
@@ -518,6 +568,7 @@
                     </div>
                 </div>
 
+                <!-- in theatres card item -->
                 <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                     <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNWJjM2ZjZTMtZTZmMy00YzViLTkxNGQtNzVjODcwNWMxYzExXkEyXkFqcGdeQXVyMTE0MTY2Mzk2._V1_SX300.jpg" alt="Shehzada">
                     <div class="card-body">
@@ -547,6 +598,7 @@
                     </div>
                 </div>
 
+                <!-- in theatres card item -->
                 <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                     <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BYjhiNjBlODctY2ZiOC00YjVlLWFlNzAtNTVhNzM1YjI1NzMxXkEyXkFqcGdeQXVyMjQxNTE1MDA@._V1_SX300.jpg" alt="Avatar: The Way of Water">
                     <div class="card-body">
@@ -576,6 +628,7 @@
                     </div>
                 </div>
 
+                <!-- in theatres card item -->
                 <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                     <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BMDIzM2FlNTctNjAzZi00YzhkLThjYWQtMDY5Njc0NjdmMGVlXkEyXkFqcGdeQXVyMTUzOTcyODA5._V1_SX300.jpg" alt="Ant-Man and the Wasp: Quantumania">
                     <div class="card-body">
@@ -605,6 +658,7 @@
                     </div>
                 </div>
 
+                <!-- in theatres card item -->
                 <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                     <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BM2QzM2JiNTMtYjU4Ny00MDZkLTk3MmUtYTRjMzVkZGJlNmYyXkEyXkFqcGdeQXVyMTUzNTgzNzM0._V1_SX300.jpg" alt="Pathaan">
                     <div class="card-body">
@@ -634,6 +688,7 @@
                     </div>
                 </div>
 
+                <!-- in theatres card item -->
                 <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                     <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNmUyOWZhYzAtMDJjZC00MGEyLWIwMzItYTRmYjRmMjUyYTI4XkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_SX300.jpg" alt="Vaalvi">
                     <div class="card-body">
@@ -669,29 +724,37 @@
 
 
 
-
+    <!-- another section with list of upcoming releases -->
     <div class="container mt-5 vh-100 horizontal-list">
+        <!-- section title -->
         <h1 class="text-white">
             <span class="bg-warning d-inline-block rounded" style="width: 5px; height: 30px;"></span>
             Coming Soon >
         </h1>
         <h4 class="text-light mb-4">Latest Releasing Near You...</h4>
 
+        <!-- coming soon card item -->
         <div class="card mb-3 text-bg-dark w-75 h-25 recent-relese">
 
+            <!-- row element -->
             <div class="row g-0 h-100">
 
+                <!-- column element with width 4 for movie poster -->
                 <div class="col-4 h-100">
                     <img class="img-fluid rounded-start h-100 w-100" src="https://m.media-amazon.com/images/M/MV5BYjk1YmFkOGYtMWVjNS00NjkyLWE3MGYtM2ZhOGYwNDZlNGYzXkEyXkFqcGdeQXVyNjkwOTg4MTA@._V1_SX300.jpg" alt="Jaggu Ani Juliet">
                 </div>
 
+                <!-- column element with width 8 for movie details -->
                 <div class="col-8 h-100 txt-overflow">
                     <div class="card-body h-100">
+                        <!-- movie title -->
                         <h5 class="card-title">Jaggu Ani Juliet</h5>
+                        <!-- movie plot -->
                         <p class="card-text h-50 txt-overflow">
                             Jaggu and Juliet is a contemporary, fun filled laugh riot that revolves around 
                             people, love, travel, fun and discovering a soul mate.
                         </p>
+                        <!-- relese date -->
                         <p class="card-text">
                             Releasing: 
                             <span>10 Feb 2023</span>
@@ -703,6 +766,7 @@
 
         </div>
 
+        <!-- coming soon card item -->
         <div class="card mb-3 text-bg-dark w-75 h-25 recent-relese">
 
             <div class="row g-0 h-100">
@@ -729,6 +793,7 @@
 
         </div>
 
+        <!-- coming soon card item -->
         <div class="card mb-3 text-bg-dark w-75 h-25 recent-relese">
 
             <div class="row g-0 h-100">
@@ -754,6 +819,7 @@
 
         </div>
 
+        <!-- coming soon card item -->
         <div class="card mb-3 text-bg-dark w-75 h-25 recent-relese">
 
             <div class="row g-0 h-100">
@@ -779,6 +845,7 @@
 
         </div>
 
+        <!-- coming soon card item -->
         <div class="card mb-3 text-bg-dark w-75 h-25 recent-relese">
 
             <div class="row g-0 h-100">
@@ -807,11 +874,14 @@
     </div>
 
 
+    <!-- Footer for page -->
     <footer class="d-flex flex-column align-items-center mt-5">
+        <!-- sign in btn -->
         <div class="container mb-4 text-center">
             <button type="button" class="btn btn-warning"> Sign In For More access</button>
         </div>
 
+        <!-- social authentication icons -->
         <div class="mb-4">
             <a href="#" class="text-light fs-3 mx-4"><i class="fa-brands fa-tiktok"></i></a>
             <a href="#" class="text-light fs-3 mx-4"><i class="fa-brands fa-instagram"></i></a>
@@ -820,6 +890,7 @@
             <a href="#" class="text-light fs-3 mx-4"><i class="fa-brands fa-facebook-f"></i></a>
         </div>
 
+        <!-- copyright info -->
         <div class="mb-3">
             <p class="text-light">
                 <span><i class="fa-regular fa-copyright"></i></span>

@@ -21,7 +21,7 @@
 
         <div class="container-fluid">
             <!-- Brand image. here created a dummy logo using div element -->
-            <a href="./index.html" class="navbar-brand"><div id="app-icon">IMDb</div></a>
+            <a href="./index.html" class="navbar-brand"><div id="app-icon">Mini IMDb</div></a>
 
             <!-- navbar toggler button appears for smaller screen sizes -->
             <button type="button" class="navbar-toggler mt-2" data-bs-toggle="collapse" data-bs-target="#mySearchBar">
@@ -36,6 +36,7 @@
                     <!-- Individual nav item -->
                     <li class="nav-item w-100 search-bar">
                         <input type="search" class="form-control" placeholder="Search" id="search-movie">
+                        <!-- div showing search results -->
                         <div  id="search-movie-results" class="search-results w-100 rounded p-1">
 
                             <!-- <div class="search-results-item rounded p-2">
@@ -62,7 +63,7 @@
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item ms-3 me-2">
-                        <!-- Navbar link -->
+                        <!-- Navbar link for favourite page -->
                         <a class="nav-link" href="#">
                             <span class="me-1"><i class="fa-solid fa-heart"></i></span>
                             Favourites
@@ -81,14 +82,17 @@
 
     </nav>
 
+    <!-- div holding favourite movies content -->
     <div class="container mt-5">
 
+        <!-- section title -->
         <h1 class="text-white">
             <span class="bg-warning d-inline-block rounded" style="width: 5px; height: 30px;"></span>
             Your Favourites >
         </h1>
         <h4 class="text-light mb-4">Movies & Shows marked as Fav by You...</h4>
 
+        <!-- div holding movies added as favourite -->
         <div id="fav-movies-lst" class="row" >
 
         </div>
@@ -96,11 +100,14 @@
     </div>
 
 
+    <!-- Footer for page -->
     <footer class="d-flex flex-column align-items-center mt-5">
+        <!-- sign in btn -->
         <div class="container mb-4 text-center">
             <button type="button" class="btn btn-warning"> Sign In For More access</button>
         </div>
 
+        <!-- social authentication icons -->
         <div class="mb-4">
             <a href="#" class="text-light fs-3 mx-4"><i class="fa-brands fa-tiktok"></i></a>
             <a href="#" class="text-light fs-3 mx-4"><i class="fa-brands fa-instagram"></i></a>
@@ -109,6 +116,7 @@
             <a href="#" class="text-light fs-3 mx-4"><i class="fa-brands fa-facebook-f"></i></a>
         </div>
 
+        <!-- copyright info -->
         <div class="mb-3">
             <p class="text-light">
                 <span><i class="fa-regular fa-copyright"></i></span>

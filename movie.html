@@ -20,7 +20,7 @@
 
         <div class="container-fluid">
             <!-- Brand image. here created a dummy logo using div element -->
-            <a href="./index.html" class="navbar-brand"><div id="app-icon">IMDb</div></a>
+            <a href="./index.html" class="navbar-brand"><div id="app-icon">Mini IMDb</div></a>
 
             <!-- navbar toggler button appears for smaller screen sizes -->
             <button type="button" class="navbar-toggler mt-2" data-bs-toggle="collapse" data-bs-target="#mySearchBar">
@@ -35,6 +35,7 @@
                     <!-- Individual nav item -->
                     <li class="nav-item w-100 search-bar">
                         <input type="search" class="form-control" placeholder="Search" id="search-movie">
+                        <!-- div showing search results -->
                         <div  id="search-movie-results" class="search-results w-100 rounded p-1">
 
                             <!-- <div class="search-results-item rounded p-2">
@@ -61,7 +62,7 @@
                 <ul class="navbar-nav ms-auto">
 
                     <li class="nav-item ms-3 me-2">
-                        <!-- Navbar link -->
+                        <!-- Navbar link for favourite movies page -->
                         <a class="nav-link" href="./favourite.html" target="_blank">
                             <span class="me-1"><i class="fa-solid fa-heart"></i></span>
                             Favourites
@@ -81,23 +82,31 @@
     </nav>
 
 
+    <!-- div holding movie details -->
     <div class="container mt-5" style="height: 80vh;">
 
+        <!-- Card item to display movie details -->
         <div class="card text-bg-dark h-100">
 
+            <!-- row element -->
             <div class="row g-0 h-100">
 
+                <!-- column element for movie poster -->
                 <div id="movie-img" class="col-5 col-md-4 h-100">
-                    
+                    <!-- movie img -->
                 </div>
 
+                <!-- column element for movie details -->
                 <div class="col-7 col-md-8 h-100">
                     <div class="card-body h-100">
+                        <!-- movie title -->
                         <h1 id="movie-title" class="card-title">Title</h1>
 
                         <p class="card-text">
+                            <!-- movie year -->
                             <span id="movie-year">Year</span>
                             <span class="fs-2">.</span>
+                            <!-- movie duration -->
                             <span id="movie-durr">Duration</span>
                         </p>
 
@@ -106,22 +115,28 @@
                             <div class="ms-2">
                                 <p class="mb-1">
                                     <span  class="text-warning"><i class="fa-solid fa-star"></i></span>
+                                    <!-- movie rating -->
                                     <span id="movie-rating">0</span>
                                 </p>
+                                <!-- movie votes -->
                                 <p id="movie-votes" class="text-info">
                                     0 Votes
                                 </p>
                             </div>
                             
+                            <!-- movie add your rating -->
                             <a class="text-white me-4 txt-shadow" href="#" style="text-decoration: none;">
                                 <i class="fa-regular fa-star"></i>
                                 <span class="ms-2">Rate</span>
                             </a>
                         </div>
-                        <p id="movie-plot" class="card-text mt-3 mb-4">
+
+                        <!-- movie plot -->
+                        <p id="movie-plot" class="card-text mt-3 mb-4 h-25 txt-overflow">
                             Plot
                         </p>
 
+                        <!-- btns for videos photos -->
                         <div class="container d-flex justify-content-between mb-4">
                             <a href="#" class="btn btn-secondary" style="width: 48%;">
                                 <i class="fa-solid fa-film"></i>
@@ -135,9 +150,11 @@
 
                         <p class="card-text">
                             Release: 
+                            <!-- movie release date -->
                             <span id="movie-release">---</span>
                         </p>
 
+                        <!-- movie genre -->
                         <div id="movie-genre" class="mt-2">
                             ---
                         </div>
@@ -153,42 +170,51 @@
     </div>
 
 
+    <!-- Other movie details -->
     <div class="container my-2 horizontal-list text-bg-dark rounded p-4">
         <h2 class="text-white mb-4">
             Details
         </h2>
 
+        <!-- movie directors -->
         <div id="movie-director">
             
         </div>
 
         <hr>
+        <!-- movie writers -->
         <div id="movie-writer">
             
         </div>
 
         <hr>
+        <!-- movie actors -->
         <div id="movie-actors">
             
 
         </div>
 
         <hr>
+        <!-- movie languages -->
         <div id="movie-languages">
             
         </div> 
 
     </div>
 
+    <!-- div showing Similar picks -->
     <div class="container mt-5 mb-2">
+        <!-- section title -->
         <h1 class="text-white">
             <span class="bg-warning d-inline-block rounded" style="width: 5px; height: 30px;"></span>
-            Picks For You >
+            Similar Picks For You >
         </h1>
         <h4 class="text-light mb-4">This week's Top Picks for You...</h4>
 
+        
         <div class="d-flex horizontal-list w-100">
 
+            <!-- Similar picks card item 1 -->
             <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                 <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNmUyOWZhYzAtMDJjZC00MGEyLWIwMzItYTRmYjRmMjUyYTI4XkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_SX300.jpg" alt="Vaalvi">
                 <div class="card-body">
@@ -213,6 +239,7 @@
                 </div>
             </div>
 
+            <!-- Similar picks card item 2 -->
             <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                 <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNDE2ZGUyZDgtYjUxMi00YWNhLTgxZDUtZjExYjRkOGU0MjU1XkEyXkFqcGdeQXVyMTEzNzg0Mjkx._V1_SX300.jpg" alt="Thunivu">
                 <div class="card-body">
@@ -238,6 +265,7 @@
                 </div>
             </div>
 
+            <!-- Similar picks card item 3 -->
             <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                 <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNGJhNGJlYmItZjBiMS00MDE2LWFkNDYtNDNiOTgxOGZhMTA5XkEyXkFqcGdeQXVyNTM2NTg3Nzg@._V1_SX300.jpg" alt="Sarsenapati Hambirrao">
                 <div class="card-body">
@@ -262,6 +290,7 @@
                 </div>
             </div>
 
+            <!-- Similar picks card item 4 -->
             <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                 <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BZGIwNWFhOGYtNjFmMi00ZWJjLWE0ZTEtODg3OWE1Y2M0NzVmXkEyXkFqcGdeQXVyMTMxODA4Njgx._V1_SX300.jpg" alt="Varisu">
                 <div class="card-body">
@@ -287,6 +316,7 @@
                 </div>
             </div>
 
+            <!-- Similar picks card item 5 -->
             <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                 <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNmUyOWZhYzAtMDJjZC00MGEyLWIwMzItYTRmYjRmMjUyYTI4XkEyXkFqcGdeQXVyMTI1NDEyNTM5._V1_SX300.jpg" alt="Vaalvi">
                 <div class="card-body">
@@ -311,6 +341,7 @@
                 </div>
             </div>
 
+            <!-- Similar picks card item 6 -->
             <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                 <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BNGJhNGJlYmItZjBiMS00MDE2LWFkNDYtNDNiOTgxOGZhMTA5XkEyXkFqcGdeQXVyNTM2NTg3Nzg@._V1_SX300.jpg" alt="Sarsenapati Hambirrao">
                 <div class="card-body">
@@ -335,6 +366,7 @@
                 </div>
             </div>
 
+            <!-- Similar picks card item 7 -->
             <div class="card card-width flex-shrink-0 text-bg-dark mx-2">
                 <img class="card-img-top h-75" src="https://m.media-amazon.com/images/M/MV5BZGIwNWFhOGYtNjFmMi00ZWJjLWE0ZTEtODg3OWE1Y2M0NzVmXkEyXkFqcGdeQXVyMTMxODA4Njgx._V1_SX300.jpg" alt="Varisu">
                 <div class="card-body">
@@ -365,12 +397,14 @@
     </div>
 
 
-
+    <!-- Footer for page -->
     <footer class="d-flex flex-column align-items-center mt-5">
+        <!-- sign in btn -->
         <div class="container mb-4 text-center">
             <button type="button" class="btn btn-warning"> Sign In For More access</button>
         </div>
 
+        <!-- social authentication icons -->
         <div class="mb-4">
             <a href="#" class="text-light fs-3 mx-4"><i class="fa-brands fa-tiktok"></i></a>
             <a href="#" class="text-light fs-3 mx-4"><i class="fa-brands fa-instagram"></i></a>
@@ -379,6 +413,7 @@
             <a href="#" class="text-light fs-3 mx-4"><i class="fa-brands fa-facebook-f"></i></a>
         </div>
 
+        <!-- copyright info -->
         <div class="mb-3">
             <p class="text-light">
                 <span><i class="fa-regular fa-copyright"></i></span>
