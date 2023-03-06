@@ -65,7 +65,7 @@ function load(){
     };
 
     // create and send request to get movie data
-    xHttpReq.open("get", `http://www.omdbapi.com/?apikey=3b0138d9&i=${movieId}`, false);
+    xHttpReq.open("get", `https://www.omdbapi.com/?apikey=3b0138d9&i=${movieId}`, false);
     xHttpReq.send();
 
 };
@@ -296,7 +296,7 @@ searchField.addEventListener("input", function(e){
 
     };
 
-    xHttpReq.open("get", `http://www.omdbapi.com/?apikey=3b0138d9&s="${searchField.value}"`, false);
+    xHttpReq.open("get", `https://www.omdbapi.com/?apikey=3b0138d9&s="${searchField.value}"`, false);
     xHttpReq.send();
 
 });

@@ -107,7 +107,7 @@ searchField.addEventListener("input", function(e){
     };
 
     // create new ajax request
-    xHttpReq.open("get", `http://www.omdbapi.com/?apikey=3b0138d9&s="${searchField.value}"`, false);
+    xHttpReq.open("get", `https://www.omdbapi.com/?apikey=3b0138d9&s="${searchField.value}"`, false);
 
     // send request
     xHttpReq.send();
