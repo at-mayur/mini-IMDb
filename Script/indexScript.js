@@ -8,6 +8,8 @@ var searchResult = document.getElementById("search-movie-results");
 var elementInFocus = false;
 var searchBarInFocus = false;
 
+let apiRequest;
+
 // focus in event for Search input field
 searchField.addEventListener("focusin", function(e){
 
@@ -67,13 +69,17 @@ searchField.addEventListener("input", function(e){
         return;
     }
 
+    if(apiRequest){
+        apiRequest.abort();
+    }
+
     // create new ajax request
-    let xHttpReq = new XMLHttpRequest();
+    apiRequest = new XMLHttpRequest();
 
     // action to perform after getting successful response
-    xHttpReq.onload = function(){
+    apiRequest.onload = function(){
         // get data from response
-        let data = JSON.parse(xHttpReq.response);
+        let data = JSON.parse(apiRequest.response);
 
         // if we get response true then display search results
         if(data.Response==="True"){
@@ -107,10 +113,10 @@ searchField.addEventListener("input", function(e){
     };
 
     // create new ajax request
-    xHttpReq.open("get", `https://www.omdbapi.com/?apikey=3b0138d9&s="${searchField.value}"`, false);
+    apiRequest.open("get", `https://www.omdbapi.com/?apikey=3b0138d9&s="${searchField.value}"`);
 
     // send request
-    xHttpReq.send();
+    apiRequest.send();
 
 });
 

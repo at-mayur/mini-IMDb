@@ -9,6 +9,8 @@ var searchResult = document.getElementById("search-movie-results");
 var elementInFocus = false;
 var searchBarInFocus = false;
 
+let apiRequest2;
+
 // load function to set fav movies
 function load(){
     // get favourite movies list from local storage
@@ -20,10 +22,10 @@ function load(){
     for(let movieId of favMovies){
 
         // create new ajax request
-        let xHttpReq = new XMLHttpRequest();
+        let apiRequest = new XMLHttpRequest();
 
-        xHttpReq.onload = function(){
-            let data = JSON.parse(xHttpReq.response);
+        apiRequest.onload = function(){
+            let data = JSON.parse(apiRequest.response);
 
             if(data.Response){
 
@@ -35,8 +37,8 @@ function load(){
         };
 
         // create and send request to get data of that movie
-        xHttpReq.open("get", `https://www.omdbapi.com/?apikey=3b0138d9&i=${movieId}`, false);
-        xHttpReq.send();
+        apiRequest.open("get", `https://www.omdbapi.com/?apikey=3b0138d9&i=${movieId}`, false);
+        apiRequest.send();
 
     }
 
@@ -188,11 +190,15 @@ searchField.addEventListener("input", function(e){
         searchResult.style.display = "none";
     }
 
-    // create new ajax request
-    let xHttpReq = new XMLHttpRequest();
+    if(apiRequest2){
+        apiRequest2.abort();
+    }
 
-    xHttpReq.onload = function(){
-        let data = JSON.parse(xHttpReq.response);
+    // create new ajax request
+    apiRequest2 = new XMLHttpRequest();
+
+    apiRequest2.onload = function(){
+        let data = JSON.parse(apiRequest2.response);
 
         // if we get response true then display search results
         if(data.Response==="True"){
@@ -225,8 +231,8 @@ searchField.addEventListener("input", function(e){
 
     };
 
-    xHttpReq.open("get", `https://www.omdbapi.com/?apikey=3b0138d9&s="${searchField.value}"`, false);
-    xHttpReq.send();
+    apiRequest2.open("get", `https://www.omdbapi.com/?apikey=3b0138d9&s="${searchField.value}"`);
+    apiRequest2.send();
 
 });
 
